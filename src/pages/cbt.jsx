@@ -1,9 +1,9 @@
 import React from 'react'
 
-const cbt = () => {
+const Cbt = () => {
   return (
-    <div>cbt</div>
+    <div>Cbt</div>
   )
 }
 
-export default cbt
+export default Cbt
