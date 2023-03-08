@@ -23,7 +23,7 @@ const Login = () => {
           <span className={css.span3}>Don't have an account click <Link to="/sign-up">here</Link> to sign-up</span>
         </form>
       </div>
-      <div>
+      <div className={css.div3}>
         <img src={pic} alt="" />
       </div>
     </div>
