@@ -10,10 +10,10 @@ const Login = () => {
         <form action='/' method='get'  className={css.content}>
           <div>
             <span className={css.span1}>LOGIN</span>
-            <span className={css.span2}>Login into your account</span>
+            <span className={css.span2}>Login Into Your Account</span>
           </div>
           <div>
-            <input type="text" className={css.inp1} placeholder="Username" name="" id="" />
+            <input type="email" className={css.inp1} placeholder="Email" name="" id="" />
             <input type="password" className={css.inp2} placeholder="Password" name="" id="" />
           </div>
           <div className={css.div2}>
