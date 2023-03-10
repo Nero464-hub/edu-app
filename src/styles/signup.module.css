@@ -1,6 +1,4 @@
 .container{
-    display: flex;
-    flex-direction: column;
     background-image: url('../images/image4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,9 +6,16 @@
     height: 100vh;
     width: 100%;
     color: #F3EFE0;
+    
+}.div1{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
     align-items: center;
     justify-content: center;
     gap: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .span1{
     font-size: 30px;
@@ -19,12 +24,13 @@
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 75%;
+    gap: 13px;
+    height: 80%;
     width: 40%;
     border: 1px solid #F3EFE0;
     padding: 10px;
     border-radius: 15px;
+    background-color: transparent;
 }
 .span2{
     text-align: center;
@@ -37,18 +43,81 @@ form div{
 }
 label{
     font-weight: bold;
+    font-size: 18px;
 }
-input{
+.div2{
+    display: flex;
+    width: 96%;
+    flex-direction: row;
+    align-items: center;
+    border: 1.5px solid #F3EFE0;
+    border-radius: 20px;
+    height: 35px;
+    padding: 5px;
+}
+svg{
+    height: 25px;
+    width: 25px;
+}
+.div2 > input{
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+.result1{
+    color: red;
+    align-self: flex-start;
+    font-size: 17px;
+}
+/* input{
     background-color: transparent;
     color: #F3EFE0;
     height: 35px;
     padding: 5px;
     outline: none;
-    border: 1px solid #F3EFE0;
+    border: 2px solid #F3EFE0;
     border-radius: 20px;
+} */
+.span4{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.inp1{
+    background-color: white;
+    color: #428bca;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #0B3356;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp1::before{
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #428bca;
+    background-color: #428bca;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.inp1:checked::before{
+    transform: scale(1);
+}
+.inp1::after{
+    outline: max(2px, 0.15em) solid #428bca;
+  outline-offset: max(2px, 0.15em);
 }
 button{
-    color: #217C7E;
+    color: #217c7e;
     background-color: #F3EFE0;
     border: 1px solid #F3EFE0;
     border-radius: 20px;
@@ -58,4 +127,19 @@ button{
 }
 .span3 a{
     color: #3399FF;
+}
+@media only screen and (max-width:950px){
+    form{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:600px){
+    form{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:400px){
+    form{
+        width: 90%;
+    }
 }
